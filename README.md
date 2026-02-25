@@ -2,9 +2,18 @@
 
 A Netflix-inspired web application that lets users search for movies and series, view details, and leave reviews — without streaming.
 
-## Authors
+---
 
-Samuel
+## Project Structure
+
+```
+src/
+├── index.html
+├── css/
+├── js/
+├── php/
+└── logs/
+```
 
 ---
 
@@ -31,7 +40,6 @@ Samuel
 | Backend  | PHP, JSON             |
 | API      | OMDB API              |
 | Logging  | Monolog               |
-| Other    | Composer              |
 
 ---
 
@@ -42,6 +50,32 @@ Client (JS)  <-->  Server (PHP + JSON)  <-->  OMDB API
 ```
 
 The client communicates with the PHP server, which fetches movie data from the OMDB API and returns it as JSON.
+
+---
+
+## Getting Started (localhost:8080)
+
+### Requirements
+- PHP 8.x installed on your machine — check with:
+  ```bash
+  php -v
+  ```
+
+### Run the project
+
+1. Clone or download the repository
+2. Navigate to the `src` folder:
+   ```bash
+   cd src
+   ```
+3. Start the PHP built-in server on port 8080:
+   ```bash
+   php -S localhost:8080
+   ```
+4. Open your browser and go to:
+   ```
+   http://localhost:8080
+   ```
 
 ---
 
@@ -74,4 +108,3 @@ The client communicates with the PHP server, which fetches movie data from the O
 
 - [OMDB API](https://www.omdbapi.com/)
 - [Monolog](https://github.com/Seldaek/monolog)
-- [Composer](https://getcomposer.org/)
